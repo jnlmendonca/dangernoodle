@@ -5,7 +5,7 @@
   "private": false,
   "main": "dist/dangernoodle.js",
   "scripts": {
-    "add-banner": "bannerize dist/index.js",
+    "add-banner": "bannerize index.js",
     "build-development": "webpack --mode=development && npm run add-banner",
     "build-production": "webpack --mode=production && npm run add-banner",
     "demo": "npm run build-development && opener demo/index.html",
