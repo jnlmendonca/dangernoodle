@@ -173,15 +173,15 @@ The list of available events is as follows:
 
 Event Name | Event Data | Description
 --- | --- | ---
-start | null | Emitted when the game starts
-stop | null | Emitted when the game stops
-pause | null | Emitted when the game pauses
-resume | null | Emitted when the game resumes
+start | | Emitted when the game starts
+stop | | Emitted when the game stops
+pause | | Emitted when the game pauses
+resume | | Emitted when the game resumes
 tick | gameTicks (Number) | Emitted every game tick. Total number of elapsed game ticks is available in data.
 move | name (String), {x (Number), y (Number)} | Emitted when the snake changes direction. Direction vector and name are available in data.
 appleEaten | applesEaten (Number) | Emitted when the an apple is eaten. Total number of apples eaten is available in data.
-wallHit | null | Emitted when the snake hits a wall
-bodyHit | null | Emitted when the snake hits its own body
+wallHit | | Emitted when the snake hits a wall
+bodyHit | | Emitted when the snake hits its own body
 
 ### Controller
 The following code creates a simple controller that maps the keyboard arrow keys to the commands that move the snake. Use the DangerNoodle instance [events](#events) and [methods](#methods) to create your own versions of a controller.
