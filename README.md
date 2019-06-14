@@ -22,10 +22,10 @@ In your HTML code, add class **danger-noodle** to an element:
 In your javascript code, import the DangerNoodle class and instantiate it:
 ```javascript
 // CommonJS
-const DangerNoodle = require('dangernoodle');
+require('@jnlmendonca/dangernoodle');
 
 // ES6
-import DangerNoodle from 'dangernoodle';
+import '@jnlmendonca/dangernoodle';
 
 const game = new DangerNoodle();
 ```
