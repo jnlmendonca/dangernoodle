@@ -1,0 +1,42 @@
+{
+  "name": "@jnlmendonca/dangernoodle",
+  "version": "1.0.0",
+  "description": "A simple javascript implementation of the snake game",
+  "private": false,
+  "main": "dist/dangernoodle.js",
+  "scripts": {
+    "add-banner": "bannerize dist/index.js",
+    "build-development": "webpack --mode=development && npm run add-banner",
+    "build-production": "webpack --mode=production && npm run add-banner",
+    "demo": "npm run build-development && opener demo/index.html",
+    "prepublish": "npm run build-production"
+  },
+  "keywords": [
+    "snake",
+    "browser",
+    "game"
+  ],
+  "author": "José Mendonça <jnl.mendonca@gmail.com>",
+  "homepage": "https://github.com/jnlmendonca/dangernoodle#readme",
+  "bugs": "https://github.com/jnlmendonca/dangernoodle/issues",
+  "repository": "github:jnlmendonca/dangernoodle",
+  "license": "MIT",
+  "devDependencies": {
+    "bannerize": "^1.1.4",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "opener": "^1.5.1",
+    "path": "^0.12.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.3"
+  },
+  "dependencies": {
+    "events": "^3.0.0",
+    "lodash": "^4.17.11"
+  },
+  "files": [
+    "dist/index.js"
+  ]
+}

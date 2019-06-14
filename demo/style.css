@@ -1,0 +1,14 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.danger-noodle-wrapper {
+	width: 600px;
+	height: 400px;
+	margin-top: 150px;
+	flex: 0 0 auto;
+}
