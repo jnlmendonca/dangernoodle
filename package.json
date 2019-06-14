@@ -21,6 +21,8 @@
   "bugs": "https://github.com/jnlmendonca/dangernoodle/issues",
   "repository": "github:jnlmendonca/dangernoodle",
   "license": "MIT",
+  "unpkg": "https://unpkg.com/@jnlmendonca/dangernoodle/index.js",
+  "browser": "https://unpkg.com/@jnlmendonca/dangernoodle/index.js",
   "devDependencies": {
     "bannerize": "^1.1.4",
     "css-loader": "^2.1.1",

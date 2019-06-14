@@ -19,7 +19,7 @@ In your HTML code, add class **danger-noodle** to an element:
 </html>
 ```
 
-In your javascript code, import the DangerNoodle class and instantiate it:
+In your code, import the DangerNoodle module and instantiate the DangerNoodle class:
 ```javascript
 // CommonJS
 require('@jnlmendonca/dangernoodle');
@@ -31,6 +31,12 @@ const game = new DangerNoodle();
 ```
 
 The game canvas will be appended as a child to the element with the **danger-noodle** class.
+
+To use it directly on client-side javascript, add a ```<scrip>``` tag pointing to the external *UNPKG* url:
+
+```html
+<script src="https://unpkg.com/@jnlmendonca/dangernoodle/index.js"></script>
+```
 
 ### Options
 An *options* object can be passed as argument to the DangerNoodle class on instantiation. The object should comply to the following structure
