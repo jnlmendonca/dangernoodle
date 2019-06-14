@@ -37,6 +37,6 @@
     "lodash": "^4.17.11"
   },
   "files": [
-    "dist/index.js"
+    "index.js"
   ]
 }
