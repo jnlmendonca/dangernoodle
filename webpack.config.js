@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname),
-    libraryTarget: 'assign',
+    libraryTarget: 'umd',
     library: 'DangerNoodle',
     libraryExport: 'default'
   },
