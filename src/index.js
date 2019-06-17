@@ -33,7 +33,7 @@ const DIRECTIONS = {
 }
 
 class DangerNoodle {
-  constructor (selector, options) {
+  constructor (options) {
     // Merge options with defaults
     this.options = merge(DEFAULTS, options)
 
