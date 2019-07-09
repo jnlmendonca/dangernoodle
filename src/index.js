@@ -71,9 +71,11 @@ class DangerNoodle {
     this.movements = 0
     this.paused = false
     this.stopped = false
+    this.tickDuration = this.options.game.tickDuration
+    this.newTickDuration = null
 
     // Run game
-    this.mainLoop = setInterval(this.loop.bind(this), this.options.game.tickDuration)
+    this.mainLoop = setInterval(this.loop.bind(this), this.tickDuration)
 
     // Emit START event
     this.events.emit('start')
@@ -99,7 +101,7 @@ class DangerNoodle {
   }
 
   resume () {
-    this.mainLoop = setInterval(this.loop.bind(this), this.options.game.tickDuration)
+    this.mainLoop = setInterval(this.loop.bind(this), this.tickDuration)
     this.paused = false
 
     // Emit RESUME event
@@ -108,6 +110,10 @@ class DangerNoodle {
 
   moveSnake (direction) {
     this.snake.setDirection(direction)
+  }
+
+  setTickDuration (tickDuration = 50) {
+    this.newTickDuration = tickDuration
   }
 
   getState () {
@@ -177,6 +183,14 @@ class DangerNoodle {
     // Draw elements
     this.apple.draw()
     this.snake.draw()
+
+    // Change tick duration
+    if (this.newTickDuration) {
+        this.tickDuration = this.newTickDuration
+        this.newTickDuration = null
+        clearInterval(this.mainLoop)
+        this.mainLoop = setInterval(this.loop.bind(this), this.tickDuration)
+    }
   }
 
   hitApple () {
