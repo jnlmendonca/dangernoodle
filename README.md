@@ -133,6 +133,14 @@ The DangerNoodle instance exposes methods through which we can control the game:
    - **direction** (String)
    Can be either **left**, **right**, **up** or **down**.
 
+- **setTickDuration(tickDuration)**
+
+   Sets new tick duration.
+   Arguments:
+
+   - **tickDuration** (Integer)
+   Number of milliseconds between ticks.
+
 - **getState()**
 
    Returns the current game state. Return value complies to the following structure:
