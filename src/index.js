@@ -60,6 +60,7 @@ class DangerNoodle {
     if (wrapper) {
       wrapper.appendChild(this.gameDisplay)
     }
+    this.clearDisplay()
   }
 
   start () {
