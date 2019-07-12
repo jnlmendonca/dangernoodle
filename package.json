@@ -1,6 +1,6 @@
 {
   "name": "@jnlmendonca/dangernoodle",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "A simple javascript implementation of the snake game",
   "private": false,
   "main": "dist/dangernoodle.js",
