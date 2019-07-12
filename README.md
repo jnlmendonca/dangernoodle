@@ -105,6 +105,10 @@ An *options* object can be passed as argument to the DangerNoodle class on insta
 ### Methods
 The DangerNoodle instance exposes methods through which we can control the game:
 
+- **reRender()**
+
+   (Re)places the game canvas according to the selector defined in the options.
+
 - **start()**
 
    (Re)Starts a game, setting the snake's length, position and direction to the initial values and all game state values to zero.

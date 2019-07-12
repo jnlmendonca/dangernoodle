@@ -52,6 +52,10 @@ class DangerNoodle {
     this.displayContext = this.gameDisplay.getContext('2d')
 
     // Place game canvas
+    this.reRender()
+  }
+
+  reRender() {
     const wrapper = document.querySelector(this.options.selector)
     if (wrapper) {
       wrapper.appendChild(this.gameDisplay)
