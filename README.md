@@ -121,6 +121,14 @@ The DangerNoodle instance exposes methods through which we can control the game:
    - **clear** (Boolean)
    If true, the display will be cleared. Default value: **true**
 
+- **terminate(clear)**
+
+   Stops the game permanently, without emitting a *stop* event
+   Arguments:
+
+   - **clear** (Boolean)
+   If true, the display will be cleared. Default value: **true**
+
 - **pause()**
 
    Pauses the game, but keeps its state.

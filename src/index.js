@@ -86,14 +86,18 @@ class DangerNoodle {
   }
 
   stop (clear = true) {
+    this.terminate(clear)
+
+    // Emit STOP event
+    this.events.emit('stop')
+  }
+
+  terminate (clear = true) {
     clearInterval(this.mainLoop)
     if (clear) {
       this.clearDisplay()
     }
     this.stopped = true
-
-    // Emit STOP event
-    this.events.emit('stop')
   }
 
   pause () {
